@@ -114,7 +114,7 @@ function move() {
 
 
 
-
+// generate apple index from 0 to grid length, while index not cover sanke route
 function generateApple() {
     do {
         appleIndex = Math.floor(Math.random() * (width * width))
