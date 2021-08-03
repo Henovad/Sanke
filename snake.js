@@ -118,7 +118,7 @@ function move() {
 function generateApple() {
     do {
         appleIndex = Math.floor(Math.random() * (width * width))
-    } while (squares[appleIndex].classList.contains("snake"))
+    } while (currentSnake.includes(appleIndex))
     squares[appleIndex].classList.add("apple")
 }
 
